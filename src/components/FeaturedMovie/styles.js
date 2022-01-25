@@ -16,6 +16,12 @@ export const FeaturedHorizontalTranparent = styled.div`
   width: inherit;
   height: inherit;
   background: linear-gradient(to right, #111 30%, transparent 70%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 30px;
+  padding-bottom: 200px;
+  padding-top: 30px;
 `;
 
 export const FeaturedName = styled.div`
@@ -80,4 +86,8 @@ export const FeaturedButtons = styled.div`
   }
 `;
 
-export const FeaturedGenres = styled.div``;
+export const FeaturedGenres = styled.div`
+    margin-top: 15px;
+    font-size: 18px;
+    color: #999;
+`;

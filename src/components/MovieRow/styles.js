@@ -19,7 +19,7 @@ export const MovieRowList = styled.div`
 
 export const MovieRowItem = styled.div`
     display: inline-block;
-    width: 150px;
+    width: 200px;
     cursor: pointer;
     
     img {
