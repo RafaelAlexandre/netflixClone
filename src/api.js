@@ -9,7 +9,7 @@ const basicFetch = async (endpoint) => {
     return json;
 }
 
-export default {
+const requestObject = {
     getHomeList: async () => {
         return [
             {
@@ -55,3 +55,4 @@ export default {
         ]
     }
 }
+export default requestObject;
