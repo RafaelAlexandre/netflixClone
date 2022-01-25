@@ -1,19 +1,11 @@
-import React, { useEffect } from "react";
-import Tmdb from './api';
+import React from "react";
+import NetflixPage from "./pages/NetflixPage";
+import './App.css';
 
-const HelloWorld = () => {
-
-  useEffect(() => {
-    const loadAll = async () => {
-      let list = await Tmdb.getHomeList();
-    }
-
-    loadAll();
-  }, [])
-
+const App = () => {
   return(
-    <div>Olá mundo!</div>
+    <NetflixPage />
   );
 }
 
-export default HelloWorld;
+export default App;
