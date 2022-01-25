@@ -4,6 +4,7 @@ import { NetflixMainPage, Lists, Footer } from "./styles";
 import MovieRow from "../../components/MovieRow";
 import FeaturedMovie from "../../components/FeaturedMovie";
 import Header from "../../components/Header";
+import netflixLoading from "../../assets/images/Netflix_LoadTime.gif";
 
 const NetflixPage = () => {
   const [movieList, setMovieList] = useState([]);
@@ -65,6 +66,12 @@ const NetflixPage = () => {
         <br />
         Os dados podem ser obtidos no site themoviedb.org
       </Footer>
+
+      {movieList.length <= 0 && (
+        <div className="loading">
+          <img src={netflixLoading} alt="Carregando" />
+        </div>
+      )}
     </NetflixMainPage>
   );
 };
